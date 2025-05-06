@@ -48,4 +48,18 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- dark/light mode toggle
+local function toggle_theme()
+  if vim.opt.background:get() == "dark" then
+    vim.opt.background = "light"
+    -- vim.cmd("colorscheme tokyonight-day")
+  else
+    vim.opt.background = "dark"
+    -- vim.cmd("colorscheme tokyonight-moon")
+  end
+end
+
+vim.keymap.set({ 'n', 't' }, "<leader>m", toggle_theme, {})
+-- vim.keymap.set({ 'n', 't'}, '<leader>m', function() vim.cmd [[set background=light]] end, { desc = 'Toggle background mode'})
+
 -- vim: ts=2 sts=2 sw=2 et
