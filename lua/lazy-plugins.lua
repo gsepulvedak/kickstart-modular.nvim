@@ -23,7 +23,7 @@ require('lazy').setup({
   --    require('Comment').setup({})
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
+  { 'numToStr/Comment.nvim',  opts = {} },
 
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
@@ -49,6 +49,8 @@ require('lazy').setup({
   require 'kickstart/plugins/treesitter',
 
   require 'kickstart/plugins/neo-tree',
+
+  require 'custom/plugins/vim-dadbod-ui',
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
