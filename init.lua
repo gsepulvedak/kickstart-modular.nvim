@@ -107,7 +107,7 @@ require 'lazy-plugins'
 
 -- My own stuff
 require 'behaviour'
-require 'style'
+-- require 'style'
 require 'keybindings'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
